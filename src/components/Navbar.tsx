@@ -1,3 +1,4 @@
+import { role } from '@/lib/data'
 import Image from 'next/image'
 import React from 'react'
 
@@ -20,7 +21,7 @@ const Navbar = () => {
         </div>
         <div className='flex flex-col'>
           <span className='text-xs font-medium leading-3'>John Doe</span>
-          <span className='text-[10px] text-gray-500 text-right'>Admin</span>
+          <span className='text-[10px] text-gray-500 text-right capitalize'>{role}</span>
         </div>
         <Image src='/avatar.png' alt='avatar' width={36} height={36} className='rounded-full' />
       </div>
